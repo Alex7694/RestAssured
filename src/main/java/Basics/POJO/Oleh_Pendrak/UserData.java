@@ -3,19 +3,18 @@ import lombok.*;
 
 @Data
 public class UserData {
-    private String lastName;
-    private int id;
+    private String last_name;
+    private Integer id;
     private String avatar;
-    private String firstName;
+    private String first_name;
     private String email;
 
 
     public UserData(String lastName, int id, String avatar, String firstName, String email) {
-        this.lastName = lastName;
+        this.last_name = lastName;
         this.id = id;
         this.avatar = avatar;
-        this.firstName = firstName;
+        this.first_name = firstName;
         this.email = email;
     }
-
 }
