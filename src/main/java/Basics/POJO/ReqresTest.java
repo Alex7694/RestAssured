@@ -1,6 +1,6 @@
-package api.Oleh_Pendrak;
+package Basics.POJO;
 
-import Basics.POJO.Oleh_Pendrak.UserData;
+import Basics.users.UserData;
 import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
 import java.util.List;
@@ -15,12 +15,9 @@ public class ReqresTest {
         List<UserData> users = given()
                 .when()
                 .contentType(ContentType.JSON)
-                .get(URL + "/api/users?page=2")
+                .get(URL + "api/users?page=2")
                 .then().log().all()
                 .extract().body().jsonPath().getList("data", UserData.class);
-
-
-
 
     }
 }

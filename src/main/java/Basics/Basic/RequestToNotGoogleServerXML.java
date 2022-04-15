@@ -6,7 +6,6 @@ import io.restassured.path.xml.XmlPath;
 import io.restassured.response.Response;
 import org.junit.Before;
 import org.junit.Test;
-
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.file.Files;
